@@ -13,7 +13,7 @@ django-invitations==2.0.0
 django-notifications-hq==1.7.0
 Django==4.2.8
 python-slugify==4.0.1
-qrcode==6.1
+qrcode==7.4.2
 tldextract==5.1.1
 django-recaptcha==3.0.0
 

@@ -1,6 +1,6 @@
 # core dependencies
 
-beautifulsoup4==4.9.3
+beautifulsoup4==4.12.3
 celery==5.2.7
 dj-database-url==2.1.0
 django-allauth==0.60.0

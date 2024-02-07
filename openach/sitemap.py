@@ -22,6 +22,7 @@ class BoardSitemap(Sitemap):
 
     def lastmod(self, obj):  # pylint: disable=no-self-use
         """Return the last time the board or its content was structurally modified."""
+
         # NOTE: self parameter is required to match the Sitemap interface
         def _last_obj(class_):
             return max(

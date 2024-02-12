@@ -17,6 +17,7 @@ def mean_na_neutral_vote(evaluations):
 
     Treats N/As as a neutral vote.
     """
+
     # NOTE: 'map' preferred to list comprehension here because the predicate is complicated
     def _replace_na(eval_):
         return (
@@ -220,6 +221,7 @@ def user_boards_contributed(user, include_removed=False, viewing_user=AnonymousU
     :param include_removed: True iff boards that have been removed should be included in the result
     :param viewing_user: user for calculating permissions
     """
+
     # basic approach: (1) merge, (2) sort, and (3) add making sure there's no duplicate boards
     def _boards(class_):
         models = (

@@ -138,7 +138,7 @@ class EvidenceSourceForm(forms.ModelForm):
         :param require: whether or not the source_url and source_date fields should be required
         """
         require = kwargs.pop("require", True)
-        super(EvidenceSourceForm, self).__init__(*args, **kwargs)
+        super().__init__(*args, **kwargs)
         if not require:
             for field_name in ["source_url", "source_date"]:
                 field = self.fields[field_name]
@@ -147,7 +147,7 @@ class EvidenceSourceForm(forms.ModelForm):
 
     def clean(self):
         """Validate that a date is provided if a URL is provided."""
-        cleaned_data = super(EvidenceSourceForm, self).clean()
+        cleaned_data = super().clean()
         if cleaned_data.get("source_url") and not cleaned_data.get("source_date"):
             raise ValidationError(_("Provide a date for the source."), code="invalid")
 

@@ -38,7 +38,6 @@ def reverse_func(apps, schema_editor):
 
 
 class Migration(migrations.Migration):
-
     dependencies = [
         ("openach", "0035_boardpermissions"),
     ]

@@ -38,7 +38,7 @@ class Command(BaseCommand):
         site.domain = site_domain
         site.save()
 
-        msg = 'Successfully configured site #%s; name: "%s"; domain: %s' % (
+        msg = 'Successfully configured site #{}; name: "{}"; domain: {}'.format(
             site_id,
             site_name,
             site_domain,

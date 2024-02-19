@@ -29,5 +29,5 @@ class Command(BaseCommand):
         admin.is_staff = True
         admin.save()
 
-        msg = "Successfully configured admin {} ({})".format(username, email)
+        msg = f"Successfully configured admin {username} ({email})"
         self.stdout.write(self.style.SUCCESS(msg))  # pylint: disable=no-member

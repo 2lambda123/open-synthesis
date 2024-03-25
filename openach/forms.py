@@ -4,6 +4,7 @@ For more information, please see:
     - https://docs.djangoproject.com/en/1.10/topics/forms/
     - https://docs.djangoproject.com/en/1.10/topics/forms/modelforms/
 """
+
 from django import forms
 from django.conf import settings
 from django.db.models.functions import Lower

@@ -4,6 +4,7 @@ Sitemaps convey meta-information to web search engines/crawlers about the conten
 please see:
     https://docs.djangoproject.com/en/1.10/ref/contrib/sitemaps
 """
+
 from django.contrib.sitemaps import Sitemap
 
 from .models import Board, Evidence, Hypothesis

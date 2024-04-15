@@ -1,4 +1,5 @@
 """Analysis of Competing Hypotheses View Decorators for managing caching and authorization."""
+
 from functools import wraps
 
 from django.conf import settings

@@ -1,4 +1,5 @@
 """Analysis of Competing Hypotheses donation utility methods."""
+
 from io import BytesIO
 
 import qrcode

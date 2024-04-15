@@ -1,4 +1,5 @@
 """Django admin command to create an admin account based on the project settings."""
+
 from django.conf import settings
 from django.contrib.auth.models import User
 from django.core.management.base import BaseCommand, CommandError

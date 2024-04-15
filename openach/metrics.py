@@ -1,4 +1,5 @@
 """Analysis of Competing Hypotheses Board Metrics."""
+
 import collections
 import itertools
 import logging
